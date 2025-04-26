@@ -2,7 +2,11 @@
 
 AI system课程实验3 使用NNI自动调参
 
-## 数据集
+## 📦 Model
+
+ - **mini ResNet18 and ResNet 34**
+
+## 📊 Dataset
 
 Oxford-IIIT Pet Dataset
 
