@@ -1,0 +1,8 @@
+{
+    "epochs": {"_type": "choice", "_value": [100]},
+    "model_type": {"_type": "choice", "_value": ["resnet18","resnet34"]},
+    "learning_rate": {"_type": "loguniform", "_value": [0.0001, 0.002]},
+    "save_dir": {"_type": "choice", "_value": ["/root/siton-data-412581749c3f4cfea0d7c972b8742057/proj/work_3_xzp/nni_checkpoint"]}
+}
+
+

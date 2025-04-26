@@ -1,0 +1,25 @@
+authorName: default
+experimentName: exp_resnet
+trialConcurrency: 2
+maxExecDuration: 6h
+maxTrialNum: 20
+#choice: local, remote, pai
+trainingServicePlatform: local
+searchSpacePath: search_space.json
+#choice: true, false
+useAnnotation: false
+tuner:
+  #choice: TPE, Random, Anneal, Evolution, BatchTuner, MetisTuner, GPTuner
+  #SMAC (SMAC should be installed through nnictl)
+  builtinTunerName: TPE
+  classArgs:
+    #choice: maximize, minimize
+    optimize_mode: maximize
+trial:
+  command: bash /root/siton-data-412581749c3f4cfea0d7c972b8742057/proj/work_3_xzp/nni_config/train._gpu1.sh
+  codeDir: .
+  gpuNum: 2
+localConfig:
+  maxTrialNumPerGpu:  2
+  useActiveGpu: true
+  gpuIndices: 0,1
