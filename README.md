@@ -1,6 +1,6 @@
 # AI-system-work-3
 
-AI system课程实验3 使用NNI自动调参
+西安交通大学人工智能试验班大二 AI system课程实验3 使用NNI自动调参 参考代码
 
 ## 📦 Model
 
